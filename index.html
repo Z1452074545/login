@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/chepai.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>注册</title>
+</head>
+
+<body>
+    <!-- 注册 -->
+    <div class="title">注册</div>
+
+    <!-- cont start -->
+    <div class="cont">
+        <div class="cont_offspring">
+            <div class="cont_off_left">
+                <img src="images/car_mark.png" alt="" srcset="">
+            </div>
+            <div class="cont_off_right col_grey car_mark">车牌号</div>
+        </div>
+        <div class="cont_offspring">
+            <div class="cont_off_left">
+                <img src="images/phone.png" alt="" srcset="">
+            </div>
+            <div class="cont_off_right inp_phone">
+                <input type="text" placeholder="手机号" maxlength="11">
+            </div>
+        </div>
+        <div class="cont_offspring">
+            <div class="cont_off_left">
+                <img src="images/code.png" alt="" srcset="">
+            </div>
+            <div class="cont_off_right inp_code">
+                <input type="text" placeholder="验证码">
+                <div class="get_code">获取验证码</div>
+            </div>
+        </div>
+    </div>
+    <!-- cont end -->
+    <!--but_login satrt  -->
+    <div class="but_login">登录</div>
+    <!--but_login end  -->
+
+
+
+    <!-- mode satrt -->
+    <div class="mode_car_mark" id="mode_car_mark" style="display:none">
+        <div id="container">
+            <div id="carLicenseBox">
+                <div class="carLicenseTitle">
+                    请输入车牌号
+                </div>
+                <div class="but_X">
+                    <img src="images/X_but.png" alt="" srcset="">
+                </div>
+                <div class="carLicenseMain">
+                    <ul>
+                        <li class="active">省</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="xinnengyuan"></li>
+                    </ul>
+                </div>
+                <button class="submitBtn" id="submitBtn">提交</button>
+            </div>
+            <div id="keyboardBox">
+                <!--<button id="changeContentBtn">ABC</button>
+				<button id="deleteBtn">X</button>-->
+                <div class="provienceBox" id="provienceBox">
+                    <ul>
+                        <li>京</li>
+                        <li>津</li>
+                        <li>渝</li>
+                        <li>沪</li>
+                        <li>冀</li>
+                        <li>晋</li>
+                        <li>辽</li>
+                        <li>吉</li>
+                        <li>黑</li>
+                        <li>苏</li>
+                    </ul>
+                    <ul>
+                        <li>浙</li>
+                        <li>皖</li>
+                        <li>闽</li>
+                        <li>赣</li>
+                        <li>鲁</li>
+                        <li>豫</li>
+                        <li>鄂</li>
+                        <li>湘</li>
+                        <li>粤</li>
+                        <li>琼</li>
+                    </ul>
+                    <ul>
+                        <li>川</li>
+                        <li>贵</li>
+                        <li>云</li>
+                        <li>陕</li>
+                        <li>甘</li>
+                        <li>青</li>
+                        <li>蒙</li>
+                        <li>桂</li>
+                        <li>宁</li>
+                        <li>新</li>
+                    </ul>
+                    <ul>
+                        <li class="changeContentBtn other">ABC</li>
+                        <li>藏</li>
+                        <li>使</li>
+                        <li>领</li>
+                        <li>警</li>
+                        <li>学</li>
+                        <li>港</li>
+                        <li>澳</li>
+                        <li class="deleteBtn other">
+                            <img src="images/backDeleteImg.png" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="textBox" id="textBox">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>0</li>
+                    </ul>
+                    <ul>
+                        <li>Q</li>
+                        <li>W</li>
+                        <li>E</li>
+                        <li>R</li>
+                        <li>T</li>
+                        <li>Y</li>
+                        <li>U</li>
+                        <li>I</li>
+                        <li>O</li>
+                        <li>P</li>
+                    </ul>
+                    <ul>
+                        <li>A</li>
+                        <li>S</li>
+                        <li>D</li>
+                        <li>F</li>
+                        <li>G</li>
+                        <li>H</li>
+                        <li>J</li>
+                        <li>K</li>
+                        <li>L</li>
+                    </ul>
+                    <ul>
+                        <li class="changeContentBtn other">返回</li>
+                        <li>Z</li>
+                        <li>X</li>
+                        <li>C</li>
+                        <li>V</li>
+                        <li>B</li>
+                        <li>N</li>
+                        <li>M</li>
+                        <li class="deleteBtn other">
+                            <img src="images/backDeleteImg.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hint satrt-->
+    <div class="lay_hint"></div>
+    <!-- hint end-->
+    <!-- mode end -->
+    <!-- 成功弹窗 start -->
+    <div class="succeed_pop" style="display:none">
+        <div class="pop_img">
+            <img src="images/hint.png" alt="" srcset="">
+        </div>
+    </div>
+    <!-- 成功弹窗 end -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/chepai.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
